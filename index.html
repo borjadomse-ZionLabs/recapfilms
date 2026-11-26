@@ -175,7 +175,7 @@ h2 .b{color:var(--blue2)}
 .stat:nth-child(odd){border-right:1px solid var(--line)}
 .stat b{display:block;font-size:clamp(40px,11vw,76px);font-weight:900;font-stretch:112%;line-height:1;letter-spacing:-.04em}
 .stat b sup{font-size:.4em;color:var(--blue2);vertical-align:top;margin-left:2px}
-.stat span{color:var(--mute);font-size:13px;display:block;margin-top:8px}
+.stat>span{color:var(--mute);font-size:13px;display:block;margin-top:8px}
 @media(min-width:900px){.stats{grid-template-columns:repeat(4,1fr)}.stat{border-right:1px solid var(--line)}.stat:last-child{border-right:0}}
 
 /* services stacking */
@@ -362,8 +362,8 @@ footer{border-top:1px solid var(--line);padding:34px 0 calc(110px + env(safe-are
     <svg><use href="#logo"/></svg>
     <span><b>RECAP</b><small>FILMS</small></span>
   </a>
-  <nav class="nav-links"><a href="#recaps">Recaps</a><a href="#servicios">Servicios</a><a href="#proceso">Proceso</a><a href="#monta">Precios</a><a href="#charls">Quién</a></nav>
-  <a href="#monta" class="nav-cta"><span class="dot"></span>Reservar</a>
+  <nav class="nav-links"><a href="#concepto">Concepto</a><a href="#recaps">Recaps</a><a href="#equipo">Cámara</a><a href="#charls">Quién</a></nav>
+  <a href="https://www.instagram.com/recapfilmms/" target="_blank" rel="noopener" class="nav-cta"><svg class="i" style="width:15px;height:15px"><use href="#ig"/></svg>Síguenos</a>
 </header>
 
 <main id="top">
@@ -384,10 +384,10 @@ footer{border-top:1px solid var(--line);padding:34px 0 calc(110px + env(safe-are
       <span class="ln"><span>merece un</span></span>
       <span class="ln"><span><em>recap<i class="recdot"></i></em></span></span>
     </h1>
-    <p class="sub">Cumpleaños, negocios, entrenos, viajes. Grabamos el momento sin que te des cuenta y te lo devolvemos en 60 segundos que dan ganas de ver otra vez.</p>
+    <p class="sub">Cumpleaños, negocios, entrenos, viajes. Momentos grabados sin que nadie se dé cuenta y convertidos en 60 segundos que dan ganas de ver otra vez.</p>
     <div class="ctas">
-      <a href="#monta" class="btn btn-rec"><span class="dot"></span>Quiero mi recap</a>
-      <a href="#recaps" class="btn btn-ghost"><svg class="i"><use href="#playi"/></svg>Ver recaps</a>
+      <a href="#recaps" class="btn btn-rec"><svg class="i"><use href="#playi"/></svg>Ver recaps</a>
+      <a href="https://www.instagram.com/recapfilmms/" target="_blank" rel="noopener" class="btn btn-ghost"><svg class="i"><use href="#ig"/></svg>Instagram</a>
     </div>
     <div class="meta mono"><span>ISO 400 · f/2.0 · 1/120</span><span class="scrollcue">Desliza<i></i></span></div>
   </div>
@@ -435,57 +435,20 @@ footer{border-top:1px solid var(--line);padding:34px 0 calc(110px + env(safe-are
 <!-- STATS -->
 <div class="stats">
   <div class="stat rv"><b data-count="8">0</b><span>recaps publicados en noviembre</span></div>
-  <div class="stat rv"><b><span data-count="72">0</span><sup>h</sup></b><span>de la grabación a tu móvil</span></div>
+  <div class="stat rv"><b><span data-count="4">0</span><sup>K</sup></b><span>calidad de cine en cada plano</span></div>
   <div class="stat rv"><b><span data-count="1">0</span><sup>"</sup></b><span>sensor de cine en el bolsillo</span></div>
   <div class="stat rv"><b data-count="0">0</b><span>trípodes, focos o poses forzadas</span></div>
 </div>
 
-<!-- SERVICIOS -->
-<section class="sec" id="servicios">
-  <div class="wrap">
-    <div class="scene mono">Escena 03 — Qué grabamos</div>
-    <h2 class="rv">Un recap para <span class="b">cada</span> momento</h2>
-    <div class="svcs">
-      <article class="svc">
-        <img src="media/c-DgIULQMog_V.jpg" alt="Recap de cumpleaños" loading="lazy">
-        <span class="n">01 / EVENTOS</span><span class="from" data-p="evento">desde 190 €</span>
-        <h3>Eventos</h3>
-        <p>Tú disfrutas; nosotros guardamos la noche. Desde el maquillaje hasta el último brindis, en un recap que vas a poner en bucle.</p>
-        <ul><li>Cumpleaños</li><li>Bodas íntimas</li><li>Fiestas privadas</li><li>Bautizos</li><li>Inauguraciones</li></ul>
-      </article>
-      <article class="svc">
-        <img src="media/c-Df2xTXRIr9g.jpg" alt="Recap de barbería" loading="lazy">
-        <span class="n">02 / NEGOCIOS</span><span class="from" data-p="negocio">desde 240 €</span>
-        <h3>Negocios</h3>
-        <p>Un reel que vende tu local sin que tengas que salir tú. Lo hicimos con La Chicago 2.0 y con 5G Technology: ambiente, equipo y dirección, en 20 segundos.</p>
-        <ul><li>Barberías y salones</li><li>Tiendas</li><li>Restaurantes</li><li>Gimnasios</li><li>Aperturas</li></ul>
-      </article>
-      <article class="svc">
-        <img src="media/c-DfU6X5jNLQX.jpg" alt="Recap de entrenamiento" loading="lazy">
-        <span class="n">03 / LIFESTYLE</span><span class="from" data-p="lifestyle">desde 150 €</span>
-        <h3>Lifestyle</h3>
-        <p>Tu entreno, tu escapada, tu día cualquiera. Para creadores y para quien quiere que su Instagram parezca una serie.</p>
-        <ul><li>Gym</li><li>Viajes</li><li>Day in my life</li><li>Vlogs</li></ul>
-      </article>
-      <article class="svc club">
-        <span class="n">04 / RECAP CLUB</span><span class="from" data-p="club">490 €/mes</span>
-        <h3>Recap<br>Club</h3>
-        <p>Contenido cada semana para tu marca o tu negocio. Venimos, grabamos y publicas. Tú solo te preocupas de salir bien.</p>
-        <ul><li>4 recaps al mes</li><li>Formato vertical y horizontal</li><li>Calendario de contenido</li><li>Prioridad de fechas</li></ul>
-      </article>
-    </div>
-  </div>
-</section>
-
 <!-- OSMO -->
-<section class="sec" style="padding-top:40px">
+<section class="sec" id="equipo" style="padding-top:40px">
   <div class="wrap osmo">
     <div class="osmo-img rv">
       <img src="media/osmo.jpg" alt="Cámara de bolsillo de Recap Films con el logo en pantalla" id="osmoImg" loading="lazy">
       <div class="hudmini mono"><span style="display:flex;gap:8px;align-items:center"><span class="dot"></span>STBY</span><span>1-INCH</span></div>
     </div>
     <div>
-      <div class="scene mono">Escena 04 — El equipo</div>
+      <div class="scene mono">Escena 03 — El equipo</div>
       <h2 class="rv">Cine que cabe en el <span class="b">bolsillo</span></h2>
       <p class="lead rv">Sin focos, sin trípode y sin rodaje de cuatro horas. Una cámara del tamaño de tu mano, con sensor de una pulgada y estabilizador de tres ejes. Al rato, la gente se olvida de que la estamos grabando. Por eso todo sale natural.</p>
       <div class="specs">
@@ -498,75 +461,11 @@ footer{border-top:1px solid var(--line);padding:34px 0 calc(110px + env(safe-are
   </div>
 </section>
 
-<!-- PROCESO -->
-<section class="sec" id="proceso" style="padding-top:30px">
-  <div class="wrap">
-    <div class="scene mono">Escena 05 — Cómo funciona</div>
-    <h2 class="rv">Tres pasos.<br><span class="b">Cero</span> líos.</h2>
-    <div class="steps">
-      <div class="step rv"><h4>Nos escribes</h4><p>Nos cuentas el plan, la fecha y el sitio. Te confirmamos disponibilidad el mismo día.</p><i class="ln"></i></div>
-      <div class="step rv"><h4>Grabamos sin que se note</h4><p>Llegamos con la cámara de bolsillo y nos movemos como uno más. Tú, a lo tuyo.</p><i class="ln"></i></div>
-      <div class="step rv"><h4>Tu recap en 72 h</h4><p>Editado con música y color de cine, en vertical para Instagram y TikTok. Una ronda de cambios incluida.</p><i class="ln"></i></div>
-    </div>
-  </div>
-</section>
-
-<!-- BUILDER -->
-<section class="sec" id="monta" style="padding-top:40px">
-  <div class="wrap">
-    <div class="scene mono">Escena 06 — Monta tu recap</div>
-    <h2 class="rv">Elige. Mira el <span class="b">precio</span>. Reserva.</h2>
-    <p class="lead rv">Configura tu recap en 20 segundos. El precio se actualiza al momento y la reserva llega con todo explicado.</p>
-
-    <div class="builder" id="builder">
-      <div class="b-body">
-        <div class="b-q">
-          <div class="lbl">¿Qué grabamos?</div>
-          <div class="seg" data-k="tipo">
-            <button class="opt on" data-v="evento"><b>Evento</b><span>Cumple, boda, fiesta</span></button>
-            <button class="opt" data-v="negocio"><b>Negocio</b><span>Reel para tu local</span></button>
-            <button class="opt" data-v="lifestyle"><b>Lifestyle</b><span>Gym, viaje, vlog</span></button>
-            <button class="opt" data-v="club"><b>Recap Club</b><span>4 recaps al mes</span></button>
-          </div>
-        </div>
-        <div class="b-q" id="qDur">
-          <div class="lbl">Duración del recap <small>lo que dura el vídeo final</small></div>
-          <div class="seg three" data-k="dur">
-            <button class="opt" data-v="30"><b>30 s</b><span>Directo</span></button>
-            <button class="opt on" data-v="60"><b>60 s</b><span>El clásico</span></button>
-            <button class="opt" data-v="90"><b>90 s+</b><span>Peli</span></button>
-          </div>
-        </div>
-        <div class="b-q">
-          <div class="lbl">Extras</div>
-          <div id="extras"></div>
-        </div>
-        <div class="b-q two">
-          <div><label for="bDate" style="display:block;font-weight:700;font-size:14px;margin-bottom:10px">Fecha</label><input id="bDate" class="field" type="date"></div>
-          <div><label for="bName" style="display:block;font-weight:700;font-size:14px;margin-bottom:10px">Tu nombre</label><input id="bName" class="field" type="text" placeholder="Nombre" autocomplete="given-name"></div>
-        </div>
-        <div class="b-q" style="margin-bottom:0">
-          <label for="bPlace" style="font-weight:700;font-size:14px;margin-bottom:10px;display:block">¿Dónde?</label>
-          <input id="bPlace" class="field" type="text" placeholder="Sitges, Barcelona, Vilanova…">
-        </div>
-      </div>
-      <div class="b-side">
-        <ul class="summary" id="summary"></ul>
-        <div class="b-foot">
-          <div class="price"><small>Precio estimado</small><b><span id="price">0</span> €<i id="per"></i></b></div>
-          <button class="btn btn-rec" id="bSend"><span class="dot"></span>Reservar</button>
-        </div>
-        <div class="b-note">Precios orientativos sin IVA. Desplazamientos fuera de Barcelona, Garraf y Penedès, a consultar.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- CLIENTES -->
 <section class="sec" style="padding-top:30px">
   <div class="wrap">
-    <div class="scene mono">Escena 07 — Ya tienen su recap</div>
-    <h2 class="rv">Quien lo prueba, <span class="b">repite</span></h2>
+    <div class="scene mono">Escena 04 — Ya tienen su recap</div>
+    <h2 class="rv">Ya tienen su <span class="b">recap</span></h2>
     <div class="logos">
       <div class="lg rv">LA CHICAGO 2.0<small>BARBERSHOP · SITGES</small></div>
       <div class="lg rv">5G TECHNOLOGY<small>TIENDA · TECNOLOGÍA</small></div>
@@ -588,7 +487,7 @@ footer{border-top:1px solid var(--line);padding:34px 0 calc(110px + env(safe-are
       <div class="cap mono"><span>Charls Albert</span><span>🇩🇴 → BCN</span></div>
     </div>
     <div>
-      <div class="scene mono">Escena 08 — Detrás de la cámara</div>
+      <div class="scene mono">Escena 05 — Detrás de la cámara</div>
       <h2 class="rv">El que va con <span class="b">la cámara</span></h2>
       <p class="lead rv">Charls es dominicano, empresario y lleva años construyendo negocios en el Garraf: barberías, sesiones, un rancho. Recap Films nace de algo sencillo: si la vida pasa tan rápido, que por lo menos quede bonita. Y que la puedas volver a ver.</p>
       <p class="lead rv">Graba como vive. Por eso sus recaps no parecen anuncios, parecen recuerdos.</p>
@@ -602,29 +501,13 @@ footer{border-top:1px solid var(--line);padding:34px 0 calc(110px + env(safe-are
   </div>
 </section>
 
-<!-- FAQ -->
-<section class="sec" style="padding-top:30px">
-  <div class="wrap">
-    <div class="scene mono">Escena 09 — Preguntas</div>
-    <h2 class="rv">Lo que todo el mundo <span class="b">pregunta</span></h2>
-    <div class="faq">
-      <details><summary>¿Dónde grabáis?<i>+</i></summary><p>Barcelona, Sitges, Vilanova i la Geltrú y todo el Garraf y el Penedès sin coste extra. ¿Fuera? También: hemos grabado en Marbella, Mallorca y República Dominicana. Te pasamos el desplazamiento cerrado antes de reservar.</p></details>
-      <details><summary>¿Cuánto tardáis en entregarlo?<i>+</i></summary><p>72 horas desde la grabación. Con la entrega express lo tienes en 24 h, perfecto para subirlo al día siguiente del evento.</p></details>
-      <details><summary>¿Y si me da vergüenza la cámara?<i>+</i></summary><p>Para eso usamos una cámara de bolsillo. Nada de focos ni trípodes. A los diez minutos nadie se acuerda de que está ahí, y por eso todo sale natural.</p></details>
-      <details><summary>¿Puedo pedir cambios?<i>+</i></summary><p>Sí. Cada recap incluye una ronda de cambios: música, orden de planos, textos. Si quieres algo más, lo hablamos.</p></details>
-      <details><summary>¿Qué música lleváis?<i>+</i></summary><p>Música con licencia para que Instagram no te silencie el vídeo. Si tienes una canción en mente, dínosla y buscamos la mejor opción.</p></details>
-      <details><summary>¿Cómo se reserva?<i>+</i></summary><p>Monta tu recap arriba y pulsa reservar. Te confirmamos la fecha y se reserva con una señal del 30 %. El resto, al entregar.</p></details>
-    </div>
-  </div>
-</section>
-
 <!-- FINAL -->
 <section class="final">
   <div class="wrap">
     <div class="scene mono" style="justify-content:center">Escena final</div>
-    <h2 class="rv">¿Lo<br><span class="b">grabamos?</span></h2>
-    <a href="#monta" class="bigrec" aria-label="Reservar tu recap"><span></span></a>
-    <p class="mono">Pulsa REC</p>
+    <h2 class="rv">Sigue el<br><span class="b">recap</span></h2>
+    <a href="https://www.instagram.com/recapfilmms/" target="_blank" rel="noopener" class="bigrec" aria-label="Seguir a Recap Films en Instagram"><span></span></a>
+    <p class="mono">Pulsa REC · @recapfilmms</p>
   </div>
 </section>
 </main>
@@ -635,7 +518,7 @@ footer{border-top:1px solid var(--line);padding:34px 0 calc(110px + env(safe-are
     <p style="color:var(--mute);max-width:420px">Recaps cinematográficos de eventos, negocios y lifestyle. Barcelona · Sitges · Vilanova.</p>
     <div class="row">
       <a href="https://www.instagram.com/recapfilmms/" target="_blank" rel="noopener"><svg class="i"><use href="#ig"/></svg>@recapfilmms</a>
-      <a href="#" class="js-contact"><svg class="i"><use href="#wa"/></svg>Escríbenos</a>
+      <a href="https://www.instagram.com/charlsalbert_/" target="_blank" rel="noopener"><svg class="i"><use href="#ig"/></svg>@charlsalbert_</a>
     </div>
     <div class="legal"><span>© 2026 Recap Films™</span><span>Hecho con cámara de bolsillo y mucho café ☕</span></div>
   </div>
@@ -643,7 +526,7 @@ footer{border-top:1px solid var(--line);padding:34px 0 calc(110px + env(safe-are
 </footer>
 
 <div class="fbar" id="fbar">
-  <a href="#monta" class="main"><span class="dot"></span>Reserva tu recap</a>
+  <a href="#recaps" class="main"><svg class="i"><use href="#playi"/></svg>Ver recaps</a>
   <a href="https://www.instagram.com/recapfilmms/" target="_blank" rel="noopener" class="ig" aria-label="Instagram de Recap Films"><svg class="i" style="width:22px;height:22px"><use href="#ig"/></svg></a>
 </div>
 
@@ -651,26 +534,13 @@ footer{border-top:1px solid var(--line);padding:34px 0 calc(110px + env(safe-are
   <div class="m-top"><span class="mono" style="display:flex;gap:8px;align-items:center"><span class="dot"></span>PLAY</span><button class="m-x" id="mX" aria-label="Cerrar">×</button></div>
   <video id="mVid" controls playsinline></video>
   <div class="m-info"><h3 id="mT"></h3><p id="mD"></p>
-    <div class="acts"><a href="#monta" class="btn btn-rec" id="mBook"><span class="dot"></span>Quiero uno así</a><a class="btn btn-ghost" id="mIg" target="_blank" rel="noopener"><svg class="i"><use href="#ig"/></svg>Instagram</a></div>
+    <div class="acts"><a class="btn btn-rec" id="mIg" target="_blank" rel="noopener"><svg class="i"><use href="#ig"/></svg>Ver en Instagram</a></div>
   </div>
 </div>
 <div class="toast" id="toast"></div>
 
 <script>
-/* ======= CONFIG: todo lo editable está aquí ======= */
-const CONFIG = {
-  whatsapp: "",                 // ej. "34600111222" — si está vacío, la reserva va por DM de Instagram
-  instagram: "recapfilmms",
-  precios: { evento:190, negocio:240, lifestyle:150, club:490 },
-  duracion: { 30:0, 60:60, 90:130 },
-  extras: [
-    { id:"express", t:"Entrega express 24 h", d:"Para subirlo al día siguiente", p:50 },
-    { id:"subs",    t:"Subtítulos animados",  d:"Como los de los reels virales", p:25 },
-    { id:"doble",   t:"Vertical + horizontal",d:"Para Instagram y para YouTube/TV", p:40 },
-    { id:"fotos",   t:"Fotos del momento",    d:"20 fotos editadas sacadas del rodaje", p:60 },
-    { id:"cam2",    t:"Segunda cámara",       d:"Dos ángulos a la vez, ideal en eventos", p:90 }
-  ]
-};
+/* ======= Reels del escaparate ======= */
 const REELS = [
   { id:"DgIULQMog_V", cat:"evento",    tag:"EVENTO",    t:"Birthday recap",               by:"Yesly · 1:40", d:"Una noche entera en un minuto y medio: preparación, decoración y fiesta. Decoración de Magic Events BCN." , ig:"https://www.instagram.com/yesly.1123/reel/DgIULQMog_V/"},
   { id:"Df2xTXRIr9g", cat:"negocio",   tag:"NEGOCIO",   t:"La Chicago 2.0",               by:"Barbershop · Sitges · 0:23", d:"Palmeras, cortes y ambiente. El reel de apertura de La Chicago 2.0, Carrer Sant Josep 36, Sitges.", ig:"https://www.instagram.com/chicago_sitges/reel/Df2xTXRIr9g/"},
@@ -703,8 +573,8 @@ const toast=m=>{const t=$("#toast");t.textContent=m;t.classList.add("on");clearT
 /* nav + floating bar */
 const nav=$("#nav"),fbar=$("#fbar");
 const onScroll=()=>{const y=scrollY,h=innerHeight;nav.classList.toggle("solid",y>40);
-  const b=$("#builder").getBoundingClientRect();const inB=b.top<h&&b.bottom>0;
-  fbar.classList.toggle("on",y>h*.8&&!inB&&!document.body.classList.contains("modal-on"));
+  const rc=$("#recaps").getBoundingClientRect();const inR=rc.top<h&&rc.bottom>0;
+  fbar.classList.toggle("on",y>h*.8&&!inR&&!document.body.classList.contains("modal-on"));
   mani();osmo();};
 addEventListener("scroll",onScroll,{passive:true});
 
@@ -749,43 +619,11 @@ updProg();
 const modal=$("#modal"),mVid=$("#mVid");
 function openModal(i){const r=REELS[i];$("#mT").textContent=r.t;$("#mD").textContent=r.d;$("#mIg").href=r.ig;
   mVid.src=`media/f-${r.id}.mp4`;mVid.poster=`media/c-${r.id}.jpg`;modal.classList.add("on");document.body.classList.add("modal-on");document.body.style.overflow="hidden";fbar.classList.remove("on");
-  mVid.play().catch(()=>{});$("#mBook").onclick=()=>{closeModal();pick("tipo",r.cat==="vlog"?"lifestyle":r.cat)}}
+  mVid.play().catch(()=>{})}
 function closeModal(){modal.classList.remove("on");document.body.classList.remove("modal-on");document.body.style.overflow="";mVid.pause();mVid.removeAttribute("src");mVid.load()}
 $("#mX").onclick=closeModal;addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
 let ty=null;modal.addEventListener("touchstart",e=>ty=e.touches[0].clientY,{passive:true});
 modal.addEventListener("touchend",e=>{if(ty!==null&&e.changedTouches[0].clientY-ty>110&&e.target!==mVid)closeModal();ty=null});
-
-/* builder */
-const S={tipo:"evento",dur:"60",extras:new Set()};
-$("#extras").innerHTML=CONFIG.extras.map(x=>`<button class="tog" data-x="${x.id}"><span>${x.t}<small>${x.d}</small></span><em>+${x.p} €</em><i class="sw"></i></button>`).join("");
-$$(".tog").forEach(b=>b.addEventListener("click",()=>{const id=b.dataset.x;S.extras.has(id)?S.extras.delete(id):S.extras.add(id);b.classList.toggle("on");calc()}));
-$$(".seg").forEach(seg=>seg.addEventListener("click",e=>{const o=e.target.closest(".opt");if(!o)return;S[seg.dataset.k]=o.dataset.v;$$(`.seg[data-k="${seg.dataset.k}"] .opt`).forEach(x=>x.classList.toggle("on",x===o));calc()}));
-function pick(k,v){S[k]=v;$$(`.seg[data-k="${k}"] .opt`).forEach(x=>x.classList.toggle("on",x.dataset.v===v));calc()}
-$$("[data-p]").forEach(el=>{const v=CONFIG.precios[el.dataset.p];el.textContent=el.dataset.p==="club"?`${v} €/mes`:`desde ${v} €`});
-const dIn=$("#bDate");const today=new Date();dIn.min=today.toISOString().slice(0,10);
-let shown=0;
-function calc(){const club=S.tipo==="club";$("#qDur").style.display=club?"none":"";
-  let tot=CONFIG.precios[S.tipo]+(club?0:CONFIG.duracion[S.dur]);const lines=[[labelTipo(),CONFIG.precios[S.tipo]]];
-  if(!club&&CONFIG.duracion[S.dur])lines.push([`Duración ${S.dur} s`,CONFIG.duracion[S.dur]]);
-  CONFIG.extras.forEach(x=>{if(S.extras.has(x.id)){tot+=x.p;lines.push([x.t,x.p])}});
-  $("#summary").innerHTML=lines.map(([a,b])=>`<li><span>${a}</span><span>${b} €</span></li>`).join("");
-  $("#per").textContent=club?"/mes":"";
-  const from=shown,to=tot,t0=performance.now();const f=t=>{const p=Math.min(1,(t-t0)/450);const v=Math.round(from+(to-from)*(1-Math.pow(1-p,3)));$("#price").textContent=v.toLocaleString("es-ES");if(p<1)requestAnimationFrame(f);else shown=to};requestAnimationFrame(f);
-  S.total=tot;S.lines=lines}
-const labelTipo=()=>({evento:"Recap de evento",negocio:"Recap de negocio",lifestyle:"Recap lifestyle",club:"Recap Club (mensual)"})[S.tipo];
-calc();
-function msg(){const n=$("#bName").value.trim(),d=dIn.value,pl=$("#bPlace").value.trim();
-  const fecha=d?new Date(d+"T12:00").toLocaleDateString("es-ES",{weekday:"long",day:"numeric",month:"long"}):"por decidir";
-  return `¡Hola Recap Films! 🎬${n?` Soy ${n}.`:""}\nQuiero reservar: ${labelTipo()}${S.tipo!=="club"?` de ${S.dur} s`:""}.\n`+
-   (S.extras.size?`Extras: ${CONFIG.extras.filter(x=>S.extras.has(x.id)).map(x=>x.t).join(", ")}.\n`:"")+
-   `Fecha: ${fecha}.\n${pl?`Lugar: ${pl}.\n`:""}Precio estimado: ${S.total} €${S.tipo==="club"?"/mes":""}.`}
-function contact(text){
-  if(CONFIG.whatsapp){open(`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(text)}`,"_blank");return}
-  const go=()=>open(`https://ig.me/m/${CONFIG.instagram}`,"_blank");
-  if(navigator.clipboard){navigator.clipboard.writeText(text).then(()=>{toast("Mensaje copiado ✓ Pégalo en el chat de Instagram");setTimeout(go,900)},go)}else go();
-}
-$("#bSend").addEventListener("click",()=>contact(msg()));
-$$(".js-contact").forEach(a=>a.addEventListener("click",e=>{e.preventDefault();contact("¡Hola Recap Films! 🎬 Quiero información para un recap.")}));
 
 /* hero video safety */
 const hv=$("#heroVid");hv.play().catch(()=>{});
